@@ -1,0 +1,87 @@
+[
+  {
+    "name": "SkillSync",
+    "quickDescription": "Advanced performance tracking and analysis tool for optimizing athlete development in academies.",
+    "description": "Developed a web-based application for Apex2100 to track, analyze, and improve athlete performance. The platform features automated PDF report generation and distribution, comprehensive data visualization tools, and a sophisticated rating system for athletes. SkillSync transforms raw athletic data into actionable insights, enhancing decision-making processes for coaches. This project leverages data-driven approaches to optimize athletic training and performance evaluation, providing valuable tools for sports professionals.",
+    "icon": "i-heroicons-chart-bar",
+    "image": "https://github.com/JulienMaurice/SkillSync/raw/master/screenshots/athlete_page.jpg",
+    "content": [
+      {
+        "type": "image",
+        "url": "https://github.com/JulienMaurice/SkillSync/raw/master/screenshots/athlete_page.jpg"
+      },
+      {
+        "type": "video",
+        "url": "https://github.com/user-attachments/assets/5d11e95b-6edb-4dbb-8d31-7ea9807c7ba3"
+      },
+      {
+        "type": "video",
+        "url": "https://github.com/user-attachments/assets/e10a2c2f-64e1-45f8-aa4b-84f6cd609ad7"
+      },
+      {
+        "type": "video",
+        "url": "https://github.com/user-attachments/assets/36f6890f-f0bd-46a9-b641-33e4f2b2172e"
+      },
+      {
+        "type": "video",
+        "url": "https://github.com/user-attachments/assets/767578e6-7550-45cc-9891-2e0f54492a0c"
+      },
+      {
+        "type": "video",
+        "url": "https://github.com/user-attachments/assets/940160df-8daa-45b0-9920-f37583441700"
+      },
+      {
+        "type": "video",
+        "url": "https://github.com/user-attachments/assets/8d479a37-3d53-4bdd-90e0-22da2a0c5851"
+      }
+    ],
+    "link": "https://github.com/JulienMaurice/SkillSync",
+    "linkImage": "https://img.shields.io/badge/GitHub-SkillSync-181717?style=for-the-badge&logo=github&logoColor=white",
+    "statuses": ["beta", "solo"],
+    "technologies": [
+      { "name": "Vue.js", "icon": "i-logos-vue" },
+      { "name": "Nuxt.js", "icon": "i-logos-nuxt-icon" },
+      { "name": "Supabase", "icon": "i-logos-supabase-icon" },
+      { "name": "TypeScript", "icon": "i-logos-typescript-icon" },
+      { "name": "Vuetify", "icon": "i-devicon-vuetify", "tooltip": "Vuetify Material Component Framework" }
+    ],
+    "presentation": "https://smooth-mistake-533.notion.site/SkillSync-Athlete-Rating-Performance-Tracking-Reporting-9839a74d573a472b82d8b96e8b0892a2?pvs=74"
+  },
+  {
+    "name": "Octopus",
+    "quickDescription": "Enhance the coordination and preparation of A400M air missions, offering a centralized and collaborative platform for streamlined operations.",
+    "description": "A project for beta.gouv.fr startups and French Air Force. This project provides the French Air Force with a modern online platform, accessible through their secure internal network, to coordinate and prepare A400M air missions. By replacing outdated Excel workflows, the tool centralizes mission data, facilitates real-time collaboration among teams, and streamlines the overall mission preparation process. This results in improved efficiency, faster decision-making, and more effective mission execution.",
+    "icon": "i-mdi-airplane",
+    "image": "/octopus.jpg",
+    "content": [
+      {
+        "type": "image",
+        "url": "/octopus.jpg"
+      }
+      ],
+          "technologies":
+       [
+      { "name": "Vue.js", "icon": "i-logos-vue" },
+      { "name": "Nuxt.js", "icon": "i-logos-nuxt-icon" },
+      { "name": "TypeScript", "icon": "i-logos-typescript-icon" },
+      { "name": "Prisma", "icon": "i-logos-prisma"},
+      { "name": "Bulma", "icon": "i-logos-bulma"},
+      { "name": "Vuetify", "icon": "i-devicon-vuetify", "tooltip": "Vuetify Material Component Framework" }],
+    "timeline": [
+      {
+        "date": "août 2023 - mai 2024",
+        "event": "",
+        "description": "First iteration"
+      },
+      {
+        "date": "janv. 2022 - mai 2022",
+        "event": "",
+        "description": "Second iteration"
+      }
+    ],
+    "link": "https://beta.gouv.fr/startups/octopus.html",
+    "linkImage": "https://img.shields.io/badge/Beta.gouv-Octopus-181717?style=for-the-badge&logo=gov.uk&logoColor=white",
+    "statuses": ["paused"],
+    "presentation": "https://beta.gouv.fr/startups/octopus.html"
+  }
+]
