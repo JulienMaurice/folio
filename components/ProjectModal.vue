@@ -64,11 +64,9 @@
 
           <!-- Technologies Used -->
           <div class="w-1/4 pl-6 flex items-center">
-            <div class="flex flex-col space-y-4">
+            <div class="flex flex-col space-y-4 items-center">
               <UTooltip v-for="tech in project.technologies" :key="tech.name" :text="tech.tooltip || tech.name">
-                <div class="flex items-center justify-center">
-                  <UIcon :name="tech.icon" class="text-3xl" />
-                </div>
+                <UIcon :name="tech.icon" class="text-3xl" />
               </UTooltip>
             </div>
           </div>
