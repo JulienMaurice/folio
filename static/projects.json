@@ -83,5 +83,32 @@
     "linkImage": "https://img.shields.io/badge/Beta.gouv-Octopus-181717?style=for-the-badge&logo=gov.uk&logoColor=white",
     "statuses": ["paused"],
     "presentation": "https://beta.gouv.fr/startups/octopus.html"
+  },
+  {
+    "name": "GearTracker",
+    "quickDescription": "Efficient gear management and tracking system for outdoor enthusiasts and professionals.",
+    "description": "GearTracker is a comprehensive solution for managing and tracking outdoor equipment. It helps users keep tabs on their gear, plan maintenance schedules, and optimize their equipment usage. Whether you're a weekend warrior or a professional guide, GearTracker streamlines your gear management process, ensuring you're always prepared for your next adventure.",
+    "icon": "i-mdi-backpack",
+    "image": "/geartracker1.jpg",
+    "content": [
+      {
+        "type": "image",
+        "url": "/geartracker2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "/geartracker1.jpg"
+      }
+    ],
+    "technologies": [
+      { "name": "Vue.js", "icon": "i-logos-vue" },
+      { "name": "Nuxt.js", "icon": "i-logos-nuxt-icon" },
+      { "name": "Supabase", "icon": "i-logos-supabase-icon" },
+      { "name": "Tailwind CSS", "icon": "i-logos-tailwindcss-icon" },
+      { "name": "Nuxt UI", "icon": "i-logos-nuxt-icon", "tooltip": "Nuxt UI Component Library" }
+    ],
+    "link": "#",
+    "linkImage": "https://img.shields.io/badge/GitHub-GearTracker-181717?style=for-the-badge&logo=github&logoColor=white",
+    "statuses": ["beta", "solo"]
   }
 ]

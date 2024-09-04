@@ -17,7 +17,8 @@
           </div>
         </div>
       </template>
-      
+    
+
       <UCarousel
         v-slot="{ item }"
         :items="project.content"
@@ -28,11 +29,33 @@
         arrows
         indicators
       >
-        <img v-if="item.type === 'image'" :src="item.url" :alt="project.name" class="w-full h-full object-cover" draggable="false">
-        <video v-else-if="item.type === 'video'" controls class="w-full h-full object-cover" draggable="false">
-          <source :src="item.url" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="relative group aspect-video">
+          <NuxtImg
+            v-if="item.type === 'image'"
+            :src="item.url"
+            :alt="item.alt || ''"
+            class="w-full h-full object-cover rounded-lg"
+            loading="lazy"
+          />
+          <video 
+            v-else-if="item.type === 'video'" 
+            controls 
+            class="w-full h-full object-cover rounded-lg" 
+            draggable="false"
+          >
+            <source :src="item.url" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black bg-opacity-50 rounded-lg">
+            <UButton
+              v-if="item.type === 'image'"
+              icon="i-heroicons-magnifying-glass-plus"
+              color="white"
+              variant="ghost"
+              @click.stop="openFullImage(item)"
+            />
+          </div>
+        </div>
       </UCarousel>
 
       <template #footer>
@@ -72,11 +95,31 @@
           </div>
         </div>
       </template>
+
+      <!-- Full Image Modal -->
+      <UModal v-model="isFullImageOpen" size="xl">
+        <NuxtImg
+          :src="fullImageSrc"
+          :alt="fullImageAlt"
+          class="max-w-full max-h-[90vh] object-contain"
+          loading="lazy"
+        />
+      </UModal>
     </UCard>
   </UModal>
 </template>
 
-<script setup>
+<script setup lang="ts">
+const isFullImageOpen = ref(false)
+const fullImageSrc = ref('')
+const fullImageAlt = ref('')
+
+function openFullImage(item: { url: string; alt?: string }) {
+  fullImageSrc.value = item.url
+  fullImageAlt.value = item.alt || ''
+  isFullImageOpen.value = true
+}
+
 defineProps({
   project: {
     type: Object,
